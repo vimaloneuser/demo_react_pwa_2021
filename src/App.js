@@ -68,11 +68,7 @@ function App() {
         </a>
       </header><br /><br />
       <div>
-        <PwaInstallPopupIOS
-          delay={3}
-          lang="en"
-          appIcon="https://cdn.iconscout.com/icon/free/png-256/ios-apple-572947.png"
-        >
+        <PwaInstallPopupIOS>
           <div
             delay={0}
             style={{
