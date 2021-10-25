@@ -15,6 +15,8 @@ const firebaseConfig = {
   measurementId: "G-81T1MGR90C"
 };
 
+let token = "";
+
 const fapp = initializeApp(firebaseConfig);
 const messaging = getMessaging(fapp);
 
@@ -24,6 +26,7 @@ getToken(messaging, {
 })
   .then((currentToken) => {
     if (currentToken) {
+      token = currentToken;
       console.log("Firebase Token", currentToken);
     } else {
       // Show permission request UI
@@ -53,6 +56,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={() => navigator.clipboard.writeText(token)} >Copy token</button>
         <a
           className="App-link"
           href="https://reactjs.org"
