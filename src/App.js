@@ -4,6 +4,8 @@ import './App.css';
 /*firebase daniel start*/
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
+import PwaInstallPopupIOS from 'react-pwa-install-ios';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyC6YVaI2PCyBDwdu3EZQF7TCXUcYAdEgVw",
@@ -54,7 +56,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <h3>React js PWA</h3>
         </p>
         <button onClick={() => navigator.clipboard.writeText(token)} >Copy token</button>
         <a
@@ -65,7 +67,24 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header><br /><br />
+      <div>
+        <PwaInstallPopupIOS>
+          <div
+            delay={0}
+            style={{
+              padding: '15px 30px',
+              backgroundColor: 'blue',
+              color: 'white',
+              textAlign: 'center',
+            }}
+          >
+            Hey ! I am the PwaInstallPopupIOS component.
+            without the 'force=true' props, I will display only on iOS device,
+            not in standalone mode.
+          </div>
+        </PwaInstallPopupIOS>
+      </div>
     </div>
   );
 }
