@@ -4,13 +4,13 @@ importScripts("https://www.gstatic.com/firebasejs/8.2.0/firebase-messaging.js");
 
 // Initialize the Firebase app in the service worker by passing the generated config
 const firebaseConfig = {
-    apiKey: "AIzaSyC6YVaI2PCyBDwdu3EZQF7TCXUcYAdEgVw",
-    authDomain: "pwa-react-b3fd2.firebaseapp.com",
-    projectId: "pwa-react-b3fd2",
-    storageBucket: "pwa-react-b3fd2.appspot.com",
-    messagingSenderId: "118385398179",
-    appId: "1:118385398179:web:c7d0bd2de0e06be899ca16",
-    measurementId: "G-81T1MGR90C"
+    apiKey: "AIzaSyDKWAvR0nop8qjn-Q_QqeyOB6tL3IDi2aY",
+    authDomain: "orthotrac-59eb6.firebaseapp.com",
+    projectId: "orthotrac-59eb6",
+    storageBucket: "orthotrac-59eb6.appspot.com",
+    messagingSenderId: "543924703775",
+    appId: "1:543924703775:web:ce3386f4c375d2eb323b2a",
+    measurementId: "G-2E8TV9BEHD"
 };
 
 firebase.initializeApp(firebaseConfig);

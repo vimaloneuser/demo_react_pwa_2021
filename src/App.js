@@ -8,13 +8,13 @@ import PwaInstallPopupIOS from 'react-pwa-install-ios';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC6YVaI2PCyBDwdu3EZQF7TCXUcYAdEgVw",
-  authDomain: "pwa-react-b3fd2.firebaseapp.com",
-  projectId: "pwa-react-b3fd2",
-  storageBucket: "pwa-react-b3fd2.appspot.com",
-  messagingSenderId: "118385398179",
-  appId: "1:118385398179:web:c7d0bd2de0e06be899ca16",
-  measurementId: "G-81T1MGR90C"
+  apiKey: "AIzaSyDKWAvR0nop8qjn-Q_QqeyOB6tL3IDi2aY",
+  authDomain: "orthotrac-59eb6.firebaseapp.com",
+  projectId: "orthotrac-59eb6",
+  storageBucket: "orthotrac-59eb6.appspot.com",
+  messagingSenderId: "543924703775",
+  appId: "1:543924703775:web:ce3386f4c375d2eb323b2a",
+  measurementId: "G-2E8TV9BEHD"
 };
 
 let token = "";
@@ -24,7 +24,7 @@ const messaging = getMessaging(fapp);
 
 getToken(messaging, {
   vapidKey:
-    "BItYX_qwsjUeDgYUgj1NNbFQtZGU7PqpJhrISX8rHvuhv2Hhksp2w9UVkS-wD0JTy8uCXUcZAqi4fYxwhiayXn8",
+    "BNfEjRff7OxGivx16_Oiyc0-xsF5xDWeLDX1s-UNWFX_zZ9npzlzR4zgEKQlmwTYD1na397toRAwfXrhuahmsCA",
 })
   .then((currentToken) => {
     if (currentToken) {
